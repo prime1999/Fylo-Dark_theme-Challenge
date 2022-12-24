@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url('images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 600px;
+    color: hsl(0, 0%, 100%);
+   
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: 10px auto;
+}
+
+nav{
+    padding: 20px;
+}
+
+.nav-brand img{
+    width: 150px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items ul li{
+    padding-right: 20px;
+    color: hsl(0, 0%, 100%);
+    transition: .5s;
+}
+
+.nav-items ul li:hover{
+   font-weight: bold;
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.top-section{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.intro-img img{
+    width: 100%;
+}
+
+.top-heading{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.top-heading h1{
+   font-size: 30px;
+   margin: 10px auto;
+   width: 90%;
+}
+
+.top-heading p{
+    font-size: 18px;
+}
+
+.top-body{
+    width: 80%;
+    margin: auto;
+}
+
+.btn{
+    padding: 10px;
+    margin-top: 30px;
+    width: 160px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: .5s;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+.products{
+    width: 70%;
+    display: flex;
+    margin: 0px auto;
+}
+
+.bg-dark{
+    background-color: hsl(218, 28%, 13%);
+    position: relative;
+    top: 150px;
+    z-index: 1;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;  
+}
+
+.product-body{
+    width: 80%;
+}
+.product-body h5{
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.product-body p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.productive{
+    display: flex;
+    width: 80%;
+    margin: 70px auto;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.productive-img img{
+    width: 100%;
+    margin-right: 20px;
+}
+
+.productive-text{
+   margin-left: 20px;
+}
+
+.productive-text h4{
+    font-size: 25px;
+}
+
+.productive-text p{
+    margin-top: 20px;
+}
+
+.work-link{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.work-link a {
+    color: hsl(176, 68%, 64%);
+    border-bottom: 1px solid hsl(176, 68%, 64%);
+    padding-bottom: 2px;
+    transition: .5s;
+}
+
+.work-link a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.team{
+    background-color: hsl(214, 24%, 17%);
+    padding: 30px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 #000;
+}
+
+.team-section{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 50px auto;
+    background-image: url('images/bg-quotes.png');
+    background-repeat: no-repeat;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.team-section img{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.team-section p{
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+
+.team-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.team-profile h6{
+    font-size: 18px;
+}
+
+.subscribe{
+    width: 700px;
+    margin: 100px auto;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: -100px;
+    background-color: hsl(214, 24%, 17%);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 #000;
+  
+}
+
+.subscribe h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.subscribe h6{
+    font-size: 14px;
+    margin-top: -20px;
+}
+.error{
+    color: red;
+}
+
+.success{
+    color: hsl(176, 68%, 64%);
+}
+
+.subscribe p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+form{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form input[type="email"]{
+    width: 65%;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+}
+
+form input[type="submit"]{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    transition: .5s;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+}
+
+form input[type="submit"]:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
+}
+
+footer{
+    background-color: hsl(216, 53%, 9%);
+    padding: 30px;
+    position: relative;
+    bottom: 0px;
+   z-index: -1;
+
+}
+
+.footer{
+    margin-top: 150px;
+}
+
+.fylo-info{
+    display: flex;
+    gap: 60px;
+    padding-left: 50px;
+    padding: 20px;
+    width: 90;
+    margin: 0 auto;
+}
+
+.location{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location p{
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.tel, .mail{
+    display: flex;
+}
+
+.mail{
+    margin-top: 10px;
+}
+
+.tel p, .mail p{
+    padding-left: 10px;
+}
+
+.about ul li, .contact-us ul li{
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.social ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.social ul li a{
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    line-height: 10px;
+}
+
+.social ul li a:hover{
+   color: hsl(176, 68%, 64%);
+   border: 1px solid hsl(176, 68%, 64%);
+}
+
+.contact-us ul li:hover{
+    font-weight: bold;
+}
+
+@media (max-width: 960px) {
+.productive{
+    display: block;
+}
+
+.productive-text{
+    margin-top: 20px;
+ }
+ 
+}
+
+@media (max-width: 680px) {
+    .grid{
+        display: block;
+    }
+}
+
+@media (max-width: 760px){
+    .team-section{
+        display: block;
+        width: 90%;
+        margin: 50px auto;
+        padding: 10px;
+    }  
+    
+    .team{
+       margin-top: 30px;
+    }
+    .intro-img img{
+        width: 80%;
+    }
+    
+    .subscribe{
+        width: 600px;
+    }
+    
+}
+@media (max-width: 880px){
+    .fylo-info{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .social{
+        margin: 30px auto;
+    }
+
+    .social ul{
+        display: flex;
+        justify-content: stretch;
+    }
+}
+
+@media (max-width: 560px) {
+
+    body{
+        background-image: url('images/bg-curvy-mobile.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 750px;
+    }
+
+    .subscribe{
+        width: 450px;
+    }
+
+    form input[type="email"]{
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+    }
+
+    form input[type="submit"]{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+
+    .subscribe h6{
+        text-align: center;
+    }
+    .fylo-info{
+        display: block;
+    }
+    .tel, .mail{
+        margin-top: 20px;
+    }
+
+    .location{
+        margin-top: 10px;
+       margin-bottom: 10px;
+    }
+
+    .about, .contact-us{
+        margin-top: 20px;
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+ 
