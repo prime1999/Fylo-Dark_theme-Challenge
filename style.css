@@ -533,7 +533,6 @@ footer{
     }
     .flex{
         display: flex;
-        
         align-items: center;
     }
     
@@ -559,7 +558,7 @@ footer{
     }
 
     .top-section{
-        width: 400px;
+        width: 90%;
     }
 }
  
